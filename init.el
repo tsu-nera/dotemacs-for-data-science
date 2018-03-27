@@ -14,7 +14,10 @@
 (when (file-exists-p custom-file)
   (load custom-file))
 
-;; python-mode - major mode for python
+;; color theme solarized
+(load-theme 'solarized t)
+
+;; python major mode
 (require 'python-mode)
 (add-to-list 'auto-mode-alist '("\\\.py\\\'" . python-mode))
 (add-to-list 'interpreter-mode-alist '("python" . python-mode))
